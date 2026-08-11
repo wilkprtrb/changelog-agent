@@ -1,0 +1,97 @@
+{
+  "product": "Changelog Agent",
+  "tagline": "Your changelog, written by AI, in plain language your customers actually understand.",
+  "generated_by": "Changelog Agent",
+  "generated_at": "2026-08-08T15:56:00+02:00",
+  "versions": [
+    {
+      "version": "v1.3.0",
+      "date": "2026-08-08",
+      "summary": "The biggest release yet — AI-written release notes, a self-promoting widget, and GitHub/GitLab support.",
+      "sections": {
+        "Features": [
+          {
+            "title": "AI-written release notes",
+            "body": "Changelog Agent now reads your git commits and writes plain-language, customer-facing release notes for you. No more shipping with a skipped changelog — every change is explained in words your users actually understand."
+          },
+          {
+            "title": "Self-promoting changelog widget",
+            "body": "Embed a single HTML file on your site and your changelog renders beautifully — with a small 'Made with Changelog Agent' badge that markets the product to every visitor. Your changelog is now your best billboard."
+          },
+          {
+            "title": "GitHub and GitLab support",
+            "body": "Connect a repository via API token and pull merged pull requests directly. Works with your existing workflow — no webhooks, no extra infrastructure."
+          }
+        ],
+        "Fixes": [
+          {
+            "title": "Fixed duplicate commit grouping",
+            "body": "Squashed and duplicate commits are now merged into a single logical change instead of appearing as separate, confusing entries."
+          },
+          {
+            "title": "Fixed empty-repo crash",
+            "body": "Running the tool on a repository with no commits no longer crashes — it now shows a clear, helpful message instead."
+          }
+        ],
+        "Improvements": [
+          {
+            "title": "Faster local processing",
+            "body": "Grouping and writing now run up to 40% faster on local hardware, so you get your changelog without waiting around."
+          },
+          {
+            "title": "Cleaner Markdown output",
+            "body": "The generated CHANGELOG.md now follows Keep-a-Changelog conventions more closely, making it easier to read and diff."
+          }
+        ]
+      }
+    },
+    {
+      "version": "v1.2.0",
+      "date": "2026-07-22",
+      "summary": "Smarter grouping and a human review gate so nothing ships without a second pair of eyes.",
+      "sections": {
+        "Features": [
+          {
+            "title": "Human review gate",
+            "body": "Drafts are now written to a review folder before anything is published. A human reviews and approves each changelog, so AI-slop never reaches your customers."
+          }
+        ],
+        "Fixes": [
+          {
+            "title": "Fixed incorrect category bucketing",
+            "body": "Commits with unconventional prefixes are now classified more accurately instead of being dumped into the wrong section."
+          }
+        ],
+        "Improvements": [
+          {
+            "title": "Better commit merging",
+            "body": "Related commits like 'fix login' and 'fix login redirect' are now recognized as one change and merged into a single, coherent entry."
+          }
+        ]
+      }
+    },
+    {
+      "version": "v1.1.0",
+      "date": "2026-07-08",
+      "summary": "The first public release — read commits, group them, and produce a clean changelog.",
+      "sections": {
+        "Features": [
+          {
+            "title": "Read commits from any local repo",
+            "body": "Point Changelog Agent at any git repository and it reads your commit history, ready to turn it into a changelog."
+          },
+          {
+            "title": "Group changes into sections",
+            "body": "Commits are automatically grouped into Features, Fixes, and Improvements so your changelog is organized and scannable."
+          }
+        ],
+        "Improvements": [
+          {
+            "title": "Plain-language output",
+            "body": "Release notes are written for your customers, not your engineers — no jargon, no internal ticket numbers, no 'refactored X'."
+          }
+        ]
+      }
+    }
+  ]
+}
